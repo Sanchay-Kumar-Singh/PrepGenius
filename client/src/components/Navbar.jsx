@@ -15,11 +15,10 @@ const Navbar = () => {
     {
       href: "programming", name: "Programming", dropdown: [
         { name: "C", href: "programming/c" },
-        { name: "C++", href: "programming/c++" },
+        { name: "C++", href: "programming/cpp" },
         { name: "Java", href: "programming/java" },
         { name: "Python", href: "programming/python" },
         { name: "FullStack", href: "programming/fullstack" },
-        { name: "Gen AI", href: "programming/gen-ai" },
       ]
     },
     {
@@ -42,7 +41,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="h-[70px] fixed w-full px-6 md:px-16 lg:px-24 xl:px-32 flex items-center justify-between z-20 bg-white text-black shadow-[0px_4px_25px_0px_#0000000D] transition-all">
+      <nav className="h-[70px] w-full px-6 md:px-16 lg:px-24 xl:px-32 flex items-center justify-between z-20 bg-white text-black shadow-[0px_4px_25px_0px_#0000000D] transition-all">
         <img onClick={() => navigate("/")} src={logo} alt="logo" className="text-indigo-600 cursor-pointer" />
 
        <ul className="md:flex hidden items-center gap-10 relative">

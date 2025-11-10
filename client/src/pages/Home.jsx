@@ -92,7 +92,7 @@ const Home = () => {
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.7 }}
                         >
-                            Welcome to Ai-Integrated Placement Preparation Platform 🚀
+                            Welcome to AI-Integrated Placement Preparation Platform 
                         </motion.h1>
 
                         <motion.p
@@ -101,8 +101,8 @@ const Home = () => {
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.4, duration: 0.9 }}
                         >
-                            Welcome to Ai-Integrated Placement Preparation Platform, your personalized platform for mastering technology and career-ready skills.
-                            Whether you’re a student, professional, or lifelong learner, we provide structured courses,
+                            Welcome to AI-Integrated Placement Preparation Platform, your personalized platform for mastering technology and career-ready skills.
+                            Whether you&apos;re a student, professional, or lifelong learner, we provide structured courses,
                             interactive roadmaps, and hands-on projects to accelerate your growth.
                             Start learning today and take your first step towards success.
                         </motion.p>
