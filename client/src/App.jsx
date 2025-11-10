@@ -11,7 +11,6 @@ const App = () => {
       <main className="grow">
         <Routes>
           <Route path="/" element={<Home />} />
-
         </Routes>
       </main>
       <Footer />
