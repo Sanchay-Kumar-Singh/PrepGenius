@@ -195,7 +195,7 @@ const Coding = () => {
   const toggle = (index) => setOpenIndex(openIndex === index ? null : index);
 
   return (
-    <div className="max-w-6xl mx-auto p-6 space-y-8">
+    <div className="max-w-6xl mx-auto p-6 space-y-8"> <br /><br /><br />
       <h1 className="text-4xl font-bold text-center text-indigo-800 mb-8">
         Complete DSA Overview & LeetCode Practice
       </h1>

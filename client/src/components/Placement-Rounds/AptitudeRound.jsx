@@ -160,7 +160,7 @@ const Aptitude = () => {
   };
 
   return (
-    <div className="max-w-5xl mx-auto p-6 space-y-8">
+    <div className="max-w-5xl mx-auto p-6 space-y-8"> <br /><br /><br />
       <h1 className="text-4xl font-bold text-center text-yellow-800 mb-8">
         Complete Aptitude Overview
       </h1>

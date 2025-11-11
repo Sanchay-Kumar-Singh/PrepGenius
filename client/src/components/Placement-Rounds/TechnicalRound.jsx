@@ -195,7 +195,7 @@ const technicalQuestions = [
 
 const TechnicalRound = () => {
   return (
-    <div className="max-w-5xl mx-auto p-6 space-y-8">
+    <div className="max-w-5xl mx-auto p-6 space-y-8"><br /><br /><br />
       <h1 className="text-4xl font-bold text-center text-purple-800 mb-8">
         Complete Technical Round Interview Preparation
       </h1>

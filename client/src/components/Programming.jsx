@@ -10,7 +10,7 @@ const Programming = () => {
   ]
   return (
     <div>
-      <div className='flex flex-col justify-center items-center gap-4 '>
+      <div className='flex flex-col justify-center items-center gap-4 '><br /><br /><br />
         <h1 className='mt-2'>Choose Programming </h1>
         <div className='flex gap-4'>
       {languages.map((language) => (

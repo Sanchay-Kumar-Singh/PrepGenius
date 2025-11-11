@@ -1,11 +1,11 @@
 import { Users, MessageCircle } from "lucide-react";
 import React, { useState } from "react";
-
+import mock from '../../assets/cartoon-ai-robot-scene.jpg'
 // Gradient Button component with orange-red theme
 const GradientButton = ({ text, Icon, onClick }) => (
   <button
     onClick={onClick}
-    className="w-full flex justify-center items-center gap-2 bg-gradient-to-r from-[#ff512f] to-[#dd2476] text-white px-4 py-2 mt-6 text-sm rounded-lg cursor-pointer hover:opacity-90 transition"
+    className="w-full flex justify-center items-center gap-2 bg-linear-to-r from-[#ff512f] to-[#dd2476] text-white px-4 py-2 mt-6 text-sm rounded-lg cursor-pointer hover:opacity-90 transition"
   >
     {Icon && <Icon className="w-5" />}
     {text}
@@ -113,10 +113,46 @@ const AIMockInterview = () => {
   };
 
   return (
+ <>
+ <div className="max-w-5xl mx-auto px-4 py-10"><br /><br />
+  <h1 className="text-3xl md:text-4xl font-extrabold mb-6 text-blue-900 text-center">
+    AI Mock Interview
+  </h1>
+
+  <img
+    src={mock} // replace with your image variable
+    alt="AI Mock Interview"
+    className="w-full md:w-2/3 mx-auto rounded-2xl shadow-lg"
+  />
+
+  <div className="max-w-3xl mx-auto mt-10">
+    <h2 className="text-3xl md:text-4xl font-extrabold text-blue-900 mb-4">
+      Overview
+    </h2>
+
+    <p className="text-slate-700 leading-relaxed text-base md:text-lg text-justify">
+      The AI Mock Interview system allows you to practice real interview scenarios
+      with instant feedback. It simulates both HR and technical interviews, listens
+      to your responses, and then evaluates your confidence level, clarity,
+      communication skills, and subject knowledge. This helps you improve your
+      performance before facing actual interviews.
+    </p>
+
+    <ul className="mt-8 space-y-3 text-slate-700 text-sm md:text-base list-disc list-inside">
+      <li>Practice HR and Technical rounds with AI</li>
+      <li>Get instant feedback on tone, clarity, and confidence</li>
+      <li>Learn how to answer questions professionally</li>
+      <li>Understand your weak areas and improve them</li>
+      <li>Boost your readiness and reduce interview fear</li>
+    </ul>
+  </div>
+</div>
+
     <div className="h-full overflow-y-scroll p-6 flex flex-col md:flex-row items-start flex-wrap gap-6 justify-center text-slate-700">
       <InterviewForm role={role} setRole={setRole} onGenerate={generateInterview} />
       <InterviewResults questions={questions} />
     </div>
+ </>
   );
 };
 

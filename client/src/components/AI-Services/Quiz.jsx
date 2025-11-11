@@ -1,11 +1,11 @@
 import { Zap, BookOpen } from "lucide-react";
 import React, { useState } from "react";
-
+import quizs from "../../assets/19629.jpg";
 // Gradient button component (new color theme: purple)
 const GradientButton = ({ text, Icon, onClick }) => (
   <button
     onClick={onClick}
-    className="w-full flex justify-center items-center gap-2 bg-gradient-to-r from-[#8e2de2] to-[#4a00e0] text-white px-4 py-2 mt-6 text-sm rounded-lg cursor-pointer hover:opacity-90 transition"
+    className="w-full flex justify-center items-center gap-2 bg-linear-to-r from-[#8e2de2] to-[#4a00e0] text-white px-4 py-2 mt-6 text-sm rounded-lg cursor-pointer hover:opacity-90 transition"
   >
     {Icon && <Icon className="w-5" />}
     {text}
@@ -111,10 +111,45 @@ const AIQuizGenerator = () => {
   };
 
   return (
+   <>
+   <div className="max-w-5xl mx-auto px-4 py-10"><br /><br />
+  <h1 className="text-3xl md:text-4xl font-extrabold mb-6 text-blue-900 text-center">
+    AI Quiz Generator
+  </h1>
+
+  <img
+    src={quizs} // replace with your quiz banner image variable
+    alt="AI Quiz Generator"
+    className="w-full md:h-100 md:w-2/3 mx-auto rounded-2xl shadow-lg"
+  />
+
+  <div className="max-w-3xl mx-auto mt-10">
+    <h2 className="text-3xl md:text-4xl font-extrabold text-blue-900 mb-4">
+      Overview
+    </h2>
+
+    <p className="text-slate-700 leading-relaxed text-base md:text-lg text-justify">
+      The AI Quiz Generator allows students and learners to instantly create topic-based
+      quizzes to practice and test their knowledge. You simply provide a subject or topic,
+      and the AI generates well-structured questions along with multiple choices and
+      correct answers. This helps in active revision and faster exam preparation.
+    </p>
+
+    <ul className="mt-8 space-y-3 text-slate-700 text-sm md:text-base list-disc list-inside">
+      <li>Create quizzes instantly from any topic or chapter</li>
+      <li>Boosts learning through active recall and practice</li>
+      <li>Helps track strengths and areas of improvement</li>
+      <li>Useful for semester exams, competitive exams, and daily revision</li>
+      <li>Saves time by avoiding manual question preparation</li>
+    </ul>
+  </div>
+</div>
+
     <div className="h-full overflow-y-scroll p-6 flex flex-col md:flex-row items-start flex-wrap gap-6 justify-center text-slate-700">
       <QuizForm topic={topic} setTopic={setTopic} onGenerate={generateQuiz} />
       <QuizResults quiz={quiz} />
     </div>
+   </>
   );
 };
 
